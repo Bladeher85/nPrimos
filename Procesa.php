@@ -18,4 +18,9 @@ print '<br>';
 print $i;
 }
 } 
+$miarchivo=fopen('Log.txt','a');//abrir archivo, nombre archivo, modo apertura
+fwrite($miarchivo, // escribir
+      " Historial Numero: ".$n1);
+echo " Tu archivo se ha guardado con el nombre \"Log.txt\"";
+fclose($miarchivo); //cerrar archivo
 ?>
